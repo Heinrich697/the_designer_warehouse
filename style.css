@@ -86,8 +86,10 @@ input {
   color: var(--white);
   font-weight: 800;
   font-size: 15px;
-  letter-spacing: 1.8px;
-  white-space: nowrap;
+  letter-spacing: 1.2px;
+  line-height: 1.2;
+  white-space: normal;
+  max-width: 180px;
 }
 
 .nav-links {
@@ -106,10 +108,26 @@ input {
   color: var(--gold);
 }
 
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+nav-actions {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    gap: 10px;
+  }
+
+  .icon-btn:nth-child(1),
+  .icon-btn:nth-child(2),
+  .icon-btn:nth-child(3) {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .icon-btn,
@@ -725,9 +743,12 @@ input {
    Better mobile responsiveness
    ========================= */
 @media (max-width: 768px) {
-  .container {
-    width: min(100% - 24px, var(--container));
+  .logo {
+    font-size: 12px;
+    letter-spacing: 1px;
+    max-width: 120px;
   }
+}
 
   .topbar {
     font-size: 12px;
