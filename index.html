@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Designer Warehouse | Modern Fashion</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Free Delivery on Orders over R1000</span>
+      <span class="topbar-right">New Season • Premium Fashion • South Africa</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#" class="logo">THE DESIGNER WAREHOUSE</a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero">Home</a>
+        <a href="#categories">Shop</a>
+        <a href="#trending">Trending</a>
+        <a href="#about">About</a>
+        <a href="#newsletter">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search">⌕</button>
+        <button class="icon-btn" aria-label="Wishlist">♡</button>
+        <button class="icon-btn" aria-label="Cart">👜</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow">Premium Menswear • Formalwear • Lifestyle</p>
+      <h1>Modern Fashion That Feels Premium.</h1>
+      <p class="hero-text">
+        Discover designer clothing, formal essentials, footwear and statement pieces
+        curated for a sharper, more modern wardrobe.
+      </p>
+      <div class="hero-buttons">
+        <a href="#categories" class="btn btn-primary">Shop Collection</a>
+        <a href="#trending" class="btn btn-secondary">View Trending</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Explore</p>
+        <h2>Shop by Category</h2>
+        <p>
+          Simplified collections for faster browsing and a cleaner shopping experience.
+        </p>
+      </div>
+
+      <div class="category-grid">
+        <article class="category-card large">
+          <div class="card-content">
+            <span>Menswear</span>
+            <h3>New Arrivals</h3>
+            <a href="#">Shop Now</a>
+          </div>
+        </article>
+
+        <article class="category-card">
+          <div class="card-content">
+            <span>Formal</span>
+            <h3>Suits & Blazers</h3>
+            <a href="#">Explore</a>
+          </div>
+        </article>
+
+        <article class="category-card">
+          <div class="card-content">
+            <span>Footwear</span>
+            <h3>Sneakers & Shoes</h3>
+            <a href="#">Explore</a>
+          </div>
+        </article>
+
+        <article class="category-card">
+          <div class="card-content">
+            <span>Accessories</span>
+            <h3>Bags, Belts & More</h3>
+            <a href="#">Explore</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Strip -->
+  <section class="promo-strip">
+    <div class="container promo-grid">
+      <div>
+        <h3>Luxury Look. Better Experience.</h3>
+        <p>
+          We’re redesigning the storefront to feel more premium, easier to shop, and more mobile-friendly.
+        </p>
+      </div>
+      <div class="promo-badges">
+        <span>Fast Delivery</span>
+        <span>Secure Checkout</span>
+        <span>Premium Brands</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending -->
+  <section class="section dark-section" id="trending">
+    <div class="container">
+      <div class="section-heading left light">
+        <p class="eyebrow">Trending Now</p>
+        <h2>Featured Products</h2>
+        <p>Clean product cards with stronger hierarchy and better call-to-actions.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <span class="tag">Sale</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Formalwear</p>
+            <h3>Double Breasted Suit</h3>
+            <p class="price">R1,275 <span>R1,950</span></p>
+            <button class="btn btn-primary small">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"></div>
+          <div class="product-info">
+            <p class="product-category">Menswear</p>
+            <h3>Premium Knit Golfer</h3>
+            <p class="price">R899 <span>R1,199</span></p>
+            <button class="btn btn-primary small">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"></div>
+          <div class="product-info">
+            <p class="product-category">Footwear</p>
+            <h3>Leather Loafers</h3>
+            <p class="price">R1,499 <span>R1,850</span></p>
+            <button class="btn btn-primary small">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"></div>
+          <div class="product-info">
+            <p class="product-category">Accessories</p>
+            <h3>Structured Sling Bag</h3>
+            <p class="price">R649 <span>R899</span></p>
+            <button class="btn btn-primary small">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-image"></div>
+      <div class="about-content">
+        <p class="eyebrow">Brand Direction</p>
+        <h2>A More Modern Digital Storefront</h2>
+        <p>
+          The goal of this redesign is to move away from a crowded catalog-first layout
+          and create a cleaner, more premium shopping experience that feels modern on both desktop and mobile.
+        </p>
+        <p>
+          This concept uses stronger typography, larger sections, cleaner spacing,
+          and more focused calls-to-action so the brand feels more fashion-forward.
+        </p>
+        <a href="#" class="btn btn-dark">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter" id="newsletter">
+    <div class="container newsletter-box">
+      <div>
+        <p class="eyebrow">Stay Updated</p>
+        <h2>Get exclusive drops and offers.</h2>
+      </div>
+
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>The Designer Warehouse</h3>
+        <p>Premium fashion, reimagined for a more modern online experience.</p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <a href="#">Men</a>
+        <a href="#">Formal</a>
+        <a href="#">Shoes</a>
+        <a href="#">Accessories</a>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Delivery</a>
+        <a href="#">Returns</a>
+      </div>
+
+      <div>
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 The Designer Warehouse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
