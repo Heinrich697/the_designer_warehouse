@@ -24,7 +24,10 @@
   <!-- Header -->
   <header class="header" id="header">
     <div class="container nav">
-      <a href="#" class="logo">THE DESIGNER WAREHOUSE</a>
+      <a href="#" class="logo">
+        <span>THE DESIGNER</span>
+        <span>WAREHOUSE</span>
+      </a>
 
       <nav class="nav-links" id="navLinks">
         <a href="#hero">Home</a>
@@ -35,9 +38,9 @@
       </nav>
 
       <div class="nav-actions">
-        <button class="icon-btn" aria-label="Search">⌕</button>
-        <button class="icon-btn" aria-label="Wishlist">♡</button>
-        <button class="icon-btn" aria-label="Cart">👜</button>
+        <button class="icon-btn desktop-only" aria-label="Search">⌕</button>
+        <button class="icon-btn desktop-only" aria-label="Wishlist">♡</button>
+        <button class="icon-btn desktop-only" aria-label="Cart">👜</button>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
       </div>
     </div>
@@ -83,7 +86,7 @@
         <article class="category-card">
           <div class="card-content">
             <span>Formal</span>
-            <h3>Suits & Blazers</h3>
+            <h3>Suits &amp; Blazers</h3>
             <a href="#">Explore</a>
           </div>
         </article>
@@ -91,7 +94,7 @@
         <article class="category-card">
           <div class="card-content">
             <span>Footwear</span>
-            <h3>Sneakers & Shoes</h3>
+            <h3>Sneakers &amp; Shoes</h3>
             <a href="#">Explore</a>
           </div>
         </article>
@@ -99,7 +102,7 @@
         <article class="category-card">
           <div class="card-content">
             <span>Accessories</span>
-            <h3>Bags, Belts & More</h3>
+            <h3>Bags, Belts &amp; More</h3>
             <a href="#">Explore</a>
           </div>
         </article>
@@ -251,6 +254,13 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
 </body>
 </html>
